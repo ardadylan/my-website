@@ -7,17 +7,13 @@
 <body>
     <h1>Hello, World!</h1>
     <p>Welcome to my GitHub Pages site.</p>
-
-<img src="https://ardadylan.github.io/my-website/images/moto_backround.jpg" alt="Motobackround" />
-
-
-
-<script>
-    fetch('https://main--preeminent-lokum-fc5c24.netlify.app/.netlify/functions/hello-world')
-        .then(response => response.json())
-        .then(data => {
-            document.body.innerHTML += `<p>${data.message}</p>`;
-        });
-</script>
+    
+    <script>
+        fetch('https://main--preeminent-lokum-fc5c24.netlify.app/.netlify/functions/hello-world')
+            .then(response => response.json())
+            .then(data => {
+                document.body.innerHTML += `<p>${data.message}</p>`;
+            });
+    </script>
 </body>
 </html>
