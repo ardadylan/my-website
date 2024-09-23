@@ -3,6 +3,38 @@
 <head>
     <title>Arda CV</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0; /* Remove default margin */
+        }
+
+        #resume {
+            margin-top: 20px; /* Space above the resume section */
+        }
+
+        embed {
+            border: none; /* Remove borders */
+            width: 100%; /* Full width */
+            height: 700px; /* Increased height for larger view */
+        }
+
+        .download-button {
+            display: block; /* Makes the button take the full width */
+            margin-bottom: 10px; /* Space below the button */
+            padding: 10px 20px; /* Add padding */
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            border: none; /* Remove border */
+            text-align: center; /* Center the text */
+            text-decoration: none; /* Remove underline from link */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        .download-button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
 </head>
 <body>
     <h1>Hello, World!</h1>
@@ -10,10 +42,8 @@
     
     <section id="resume">
         <h2>My Resume</h2>
-        <iframe src="images/Arda Unal Resume wObj.pdf">
-            This browser does not support PDFs. Please download the PDF to view it: 
-            <a href="images/Arda Unal Resume wObj.pdf">Download Resume</a>
-        </iframe>
+        <a href="images/Arda Unal Resume wObj.pdf" class="download-button" download>Download Resume</a>
+        <embed src="images/Arda Unal Resume wObj.pdf" type="application/pdf" width="100%" height="700px">
     </section>
     
     <script>
