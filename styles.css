@@ -5,52 +5,19 @@
   --color-4: hsl(191.33, 91.84%, 80.78%);
 }
 
-h1:first-of-type {
-  font-family: "Gowun Batang", serif;
-}
-
-body {
-  background: linear-gradient(
-    90deg,
-    var(--color-1) 0%,
-    var(--color-1) 25%,
-    var(--color-2) 25%,
-    var(--color-2) 50%,
-    var(--color-3) 50%,
-    var(--color-3) 75%,
-    var(--color-4) 75%,
-    var(--color-4) 100%
-  );
-}
-:root {
-  --color-1: rgb(202, 187, 233);
-  --color-2: rgb(255, 206, 243);
-  --color-3: rgb(253, 253, 253);
-  --color-4: rgb(161, 234, 251);
-}
-
-body {
-  background: linear-gradient(
-    90deg,
-    var(--color-1) 0%,
-    var(--color-1) 25%,
-    var(--color-2) 25%,
-    var(--color-2) 50%,
-    var(--color-3) 50%,
-    var(--color-3) 75%,
-    var(--color-4) 75%,
-    var(--color-4) 100%
-  );
-} /* Global Styles */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: Arial, sans-serif;
+  background: linear-gradient(
+    90deg,
+    var(--color-1) 0%,
+    var(--color-1) 25%,
+    var(--color-2) 25%,
+    var(--color-2) 50%,
+    var(--color-3) 50%,
+    var(--color-3) 75%,
+    var(--color-4) 75%,
+    var(--color-4) 100%
+  );
   background-image: url("https://ardadylan.github.io/my-website/images/turkiyebeach.JPG");
   background-size: cover;
   background-position: center;
@@ -58,41 +25,47 @@ body {
   background-attachment: fixed;
   color: #fff;
   padding: 2rem;
+  box-sizing: border-box;
 }
 
 h1#name {
   color: #000;
+  font-family: "Gowun Batang", serif;
   margin-bottom: 1rem;
 }
 
+/* Global margin for h1 and p */
 h1,
 p {
   margin-bottom: 1rem;
 }
 
-/* Resume Section */
-
-#resume {
-  margin-top: 2rem;
-}
-
-/* Download Button */
-
-.download-button {
-  display: inline-block;
-  margin-bottom: 1rem;
-  padding: 0.5rem 1rem;
+/* Button styles */
+.download-button,
+.visualization-button {
+  display: block; /* Ensure buttons stack */
+  margin: 1rem 0; /* Space between buttons */
+  padding: 0.3rem 0.8rem; /* Reduced padding for smaller buttons */
   background-color: #d3d3d3;
   color: black;
-  border: none;
-  text-align: center;
   text-decoration: none;
   border-radius: 0.25rem;
-  font-size: 1rem;
+  font-size: 0.9rem; /* Reduced font size */
+  text-align: center; /* Center text in buttons */
+  width: 150px; /* Set a specific width */
 }
 
-.download-button:hover {
+/* Align buttons to the left */
+.download-button:hover,
+.visualization-button:hover {
   background-color: #a9a9a9;
+}
+
+/* Aligning buttons to the left */
+#buttons-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: flex-start; /* Align to the left */
 }
 
 /* Positioning image at the top right */
@@ -108,3 +81,9 @@ p {
   border-radius: 200%; /* Optional: make it a circle */
 }
 
+/* General reset for box sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
