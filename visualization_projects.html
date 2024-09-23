@@ -1,51 +1,123 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualization Projects</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" /> <!-- Link to your CSS file -->
-  </head>
-  <body>
+    <style>
+        body {
+            font-family: "Gowun Batang", serif; /* Updated to match the header font */
+            background: linear-gradient(
+                90deg,
+                hsl(259.57, 51.11%, 82.35%) 0%,
+                hsl(259.57, 51.11%, 82.35%) 25%,
+                hsl(314.69, 100%, 90.39%) 25%,
+                hsl(314.69, 100%, 90.39%) 50%,
+                hsl(0, 0%, 99.22%) 50%,
+                hsl(0, 0%, 99.22%) 75%,
+                hsl(191.33, 91.84%, 80.78%) 75%,
+                hsl(191.33, 91.84%, 80.78%) 100%
+            );
+            background-image: url("https://ardadylan.github.io/my-website/images/turkiyebeach.JPG");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #000; /* Set text color to black for visibility */
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #000; /* Header color */
+            margin-bottom: 1rem;
+            text-align: center; /* Center the header */
+        }
+
+        .tableauPlaceholder {
+            width: 100%; /* Full width */
+            height: 600px; /* Adjust height as needed */
+            margin: auto; /* Center the visualization */
+        }
+    </style>
+</head>
+<body>
     <h1>Visualization Projects</h1>
+    
     <div class='tableauContainer'>
-      <div class='tableauPlaceholder' id='viz1727115810398'>
-        <noscript>
-          <a href='#'>
-            <img alt='Dashboard 1' src='https://public.tableau.com/static/images/WJ/WJW7DQKWY/1_rss.png' style='border: none' />
-          </a>
-        </noscript>
-        <object class='tableauViz' style='display:none;'>
-          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-          <param name='embed_code_version' value='3' />
-          <param name='path' value='shared/WJW7DQKWY' />
-          <param name='toolbar' value='yes' />
-          <param name='static_image' value='https://public.tableau.com/static/images/WJ/WJW7DQKWY/1.png' />
-          <param name='animate_transition' value='yes' />
-          <param name='display_static_image' value='yes' />
-          <param name='display_spinner' value='yes' />
-          <param name='display_overlay' value='yes' />
-          <param name='display_count' value='yes' />
-          <param name='language' value='en-US' />
-        </object>
-      </div>
+        <div class='tableauPlaceholder' id='viz1727115810398'>
+            <noscript>
+                <a href='#'>
+                    <img alt='Dashboard 1' src='https://public.tableau.com/static/images/WJ/WJW7DQKWY/1_rss.png' style='border: none' />
+                </a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='path' value='shared/WJW7DQKWY' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https://public.tableau.com/static/images/WJ/WJW7DQKWY/1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object>
+        </div>
     </div>
+    
+    <div class='tableauContainer'>
+        <div class='tableauPlaceholder' id='viz1727120911308' style='position: relative'>
+            <noscript>
+                <a href='#'>
+                    <img alt='Story 1' src='https://public.tableau.com/static/images/Sn/SneakerAttic-OverallBusiness/Story1/1_rss.png' style='border: none' />
+                </a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='SneakerAttic-OverallBusiness/Story1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https://public.tableau.com/static/images/Sn/SneakerAttic-OverallBusiness/Story1/1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object>
+        </div>
+    </div>
+
     <script type='text/javascript'>
-      var divElement = document.getElementById('viz1727115810398');
-      var vizElement = divElement.getElementsByTagName('object')[0];
-      if (divElement.offsetWidth > 800) {
-        vizElement.style.width = '1366px';
-        vizElement.style.height = '795px';
-      } else if (divElement.offsetWidth > 500) {
-        vizElement.style.width = '1366px';
-        vizElement.style.height = '795px';
-      } else {
-        vizElement.style.width = '100%';
-        vizElement.style.height = '2777px';
-      }
-      var scriptElement = document.createElement('script');
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        var divElement1 = document.getElementById('viz1727115810398');
+        var vizElement1 = divElement1.getElementsByTagName('object')[0];
+        if (divElement1.offsetWidth > 800) {
+            vizElement1.style.width = '1366px';
+            vizElement1.style.height = '795px';
+        } else if (divElement1.offsetWidth > 500) {
+            vizElement1.style.width = '1366px';
+            vizElement1.style.height = '795px';
+        } else {
+            vizElement1.style.width = '100%';
+            vizElement1.style.height = '2777px';
+        }
+
+        var divElement2 = document.getElementById('viz1727120911308');
+        var vizElement2 = divElement2.getElementsByTagName('object')[0];
+        vizElement2.style.width = '1016px';
+        vizElement2.style.height = '991px';
+
+        var scriptElement1 = document.createElement('script');
+        scriptElement1.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement1.parentNode.insertBefore(scriptElement1, vizElement1);
+
+        var scriptElement2 = document.createElement('script');
+        scriptElement2.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement2.parentNode.insertBefore(scriptElement2, vizElement2);
     </script>
-  </body>
+</body>
 </html>
