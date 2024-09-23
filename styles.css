@@ -27,12 +27,6 @@ h1, p {
   margin-top: 2rem;
 }
 
-/* Embed Styles */
-
-embed {
-  display: none; /* Hide the PDF embed */
-}
-
 /* Download Button */
 
 .download-button {
