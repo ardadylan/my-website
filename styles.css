@@ -1,4 +1,26 @@
-/* Global Styles */
+:root {
+  --color-1: hsl(259.57,51.11%,82.35%);
+  --color-2: hsl(314.69,100%,90.39%);
+  --color-3: hsl(0,0%,99.22%);
+  --color-4: hsl(191.33,91.84%,80.78%);
+}
+
+h1:first-of-type {
+  font-family: 'Gowun Batang', serif;
+}
+
+body {
+  background: linear-gradient(90deg, var(--color-1) 0%, var(--color-1) 25%, var(--color-2) 25%, var(--color-2) 50%, var(--color-3) 50%, var(--color-3) 75%, var(--color-4) 75%, var(--color-4) 100%);
+}:root {
+  --color-1: rgb(202,187,233);
+  --color-2: rgb(255,206,243);
+  --color-3: rgb(253,253,253);
+  --color-4: rgb(161,234,251);
+}
+
+body {
+  background: linear-gradient(90deg, var(--color-1) 0%, var(--color-1) 25%, var(--color-2) 25%, var(--color-2) 50%, var(--color-3) 50%, var(--color-3) 75%, var(--color-4) 75%, var(--color-4) 100%);
+}/* Global Styles */
 
 * {
   box-sizing: border-box;
@@ -15,6 +37,11 @@ body {
   background-attachment: fixed;
   color: #fff;
   padding: 2rem;
+}
+
+h1#name {
+  color: #000;
+  margin-bottom: 1rem;
 }
 
 h1, p {
