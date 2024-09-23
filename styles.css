@@ -1,20 +1,31 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0; /* Remove default margin */
-    padding: 20px; /* Add padding */
-}
+        body, html {
+            height: 100%;
+            margin: 0; /* Remove default margin */
+        }
 
-iframe {
-    border: none; /* Remove borders */
-    width: 100%; /* Ensure full width */
-    height: 600px; /* Set desired height */
-}
+        #resume {
+            margin-top: 20px; /* Space above the resume section */
+        }
 
-/* Additional styles */
-h1, h2, p {
-    color: #fff; /* Change text color for visibility */
-}
+        embed {
+            border: none; /* Remove borders */
+            width: 100%; /* Full width */
+            height: 600px; /* Set desired height */
+        }
 
-section {
-    margin-top: 20px; /* Space above the resume section */
-}
+        .download-button {
+            display: inline-block; /* Inline for small button */
+            margin-bottom: 10px; /* Space below the button */
+            padding: 5px 10px; /* Smaller padding */
+            background-color: #d3d3d3; /* Light gray background */
+            color: black; /* Black text */
+            border: none; /* Remove border */
+            text-align: center; /* Center the text */
+            text-decoration: none; /* Remove underline from link */
+            border-radius: 3px; /* Rounded corners */
+            font-size: 14px; /* Smaller font size */
+        }
+
+        .download-button:hover {
+            background-color: #a9a9a9; /* Darker gray on hover */
+        }
