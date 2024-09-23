@@ -73,4 +73,58 @@
       /* Aligning buttons to the left */
       #buttons-container {
         display: flex;
-        flex-direction: column; /* Stack b
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: flex-start; /* Keep buttons on the left */
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        #top-right-image img {
+          width: 18vw; /* Slightly smaller size for tablets */
+        }
+
+        .download-button,
+        .visualization-button {
+          width: 120px; /* Smaller width for buttons on smaller screens */
+        }
+      }
+
+      @media (max-width: 480px) {
+        #top-right-image {
+          position: relative; /* Move image down */
+          margin-top: 1rem; /* Add some space above the image */
+        }
+        
+        #top-right-image img {
+          width: 15vw; /* 10% smaller for mobile */
+        }
+
+        #buttons-container {
+          flex-direction: row; /* Align buttons next to the image */
+          justify-content: center; /* Center buttons horizontally */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top-right-image">
+      <img
+        src="https://github.com/ardadylan/my-website/blob/main/images/ardamotopic.PNG?raw=true"
+        alt="Arda's Image"
+      />
+    </div>
+    <h1 id="name">Arda Dylan Unal</h1>
+
+    <div id="buttons-container">
+      <!-- Download Resume Button -->
+      <a href="images/Arda Unal Resume wObj.pdf" class="download-button" download>
+        Download Resume
+      </a>
+
+      <!-- Button to Open Visualization Projects -->
+      <a href="visualisation_projects.html" class="visualization-button">
+        Visualization Projects
+      </a>
+    </div>
+  </body>
+</html>
