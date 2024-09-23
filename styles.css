@@ -1,89 +1,68 @@
-:root {
-  --color-1: hsl(259.57, 51.11%, 82.35%);
-  --color-2: hsl(314.69, 100%, 90.39%);
-  --color-3: hsl(0, 0%, 99.22%);
-  --color-4: hsl(191.33, 91.84%, 80.78%);
-}
-
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(
-    90deg,
-    var(--color-1) 0%,
-    var(--color-1) 25%,
-    var(--color-2) 25%,
-    var(--color-2) 50%,
-    var(--color-3) 50%,
-    var(--color-3) 75%,
-    var(--color-4) 75%,
-    var(--color-4) 100%
-  );
-  background-image: url("https://ardadylan.github.io/my-website/images/turkiyebeach.JPG");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #fff;
-  padding: 2rem;
-  box-sizing: border-box;
+    font-family: "Gowun Batang", serif; /* Updated to match the header font */
+    background: linear-gradient(
+        90deg,
+        hsl(259.57, 51.11%, 82.35%) 0%,
+        hsl(259.57, 51.11%, 82.35%) 25%,
+        hsl(314.69, 100%, 90.39%) 25%,
+        hsl(314.69, 100%, 90.39%) 50%,
+        hsl(0, 0%, 99.22%) 50%,
+        hsl(0, 0%, 99.22%) 75%,
+        hsl(191.33, 91.84%, 80.78%) 75%,
+        hsl(191.33, 91.84%, 80.78%) 100%
+    );
+    background-image: url("https://ardadylan.github.io/my-website/images/turkiyebeach.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #000; /* Set text color to black for visibility */
+    padding: 2rem;
+    box-sizing: border-box;
+    position: relative; /* Allow absolute positioning of button */
 }
 
-h1#name {
-  color: #000;
-  font-family: "Gowun Batang", serif;
-  margin-bottom: 1rem;
+h1 {
+    color: #000; /* Header color */
+    margin-bottom: 1rem;
+    text-align: center; /* Center the header */
 }
 
-/* Global margin for h1 and p */
-h1,
-p {
-  margin-bottom: 1rem;
+.tableauContainer {
+    margin-bottom: 2rem; /* Add spacing between visualizations */
+}
+
+.tableauPlaceholder {
+    width: 100%; /* Full width */
+    height: 600px; /* Adjust height as needed */
+    margin: auto; /* Center the visualization */
+}
+
+.visualization-label {
+    text-align: left; /* Center the label */
+    margin: 1rem 0; /* Add some margin */
+    font-size: 1.7rem; /* Adjust font size */
+    font-weight: bold; /* Make the label bold */
 }
 
 /* Button styles */
-.download-button,
-.visualization-button {
-  display: block; /* Ensure buttons stack */
-  margin: 1rem 0; /* Space between buttons */
-  padding: 0.3rem 0.8rem; /* Reduced padding for smaller buttons */
-  background-color: #d3d3d3;
-  color: black;
-  text-decoration: none;
-  border-radius: 0.25rem;
-  font-size: 0.9rem; /* Reduced font size */
-  text-align: center; /* Center text in buttons */
-  width: 150px; /* Set a specific width */
+.back-button {
+    position: absolute; /* Position button at the top left */
+    top: 10px; /* Distance from top */
+    left: 10px; /* Distance from left */
+    padding: 0.5rem 1rem; /* Padding for button */
+    background-color: #d3d3d3; /* Button color */
+    color: black; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 0.25rem; /* Rounded corners */
+    font-size: 0.9rem; /* Font size */
+    text-align: center; /* Center text */
 }
 
-/* Align buttons to the left */
-.download-button:hover,
-.visualization-button:hover {
-  background-color: #a9a9a9;
+.back-button:hover {
+    background-color: #a9a9a9; /* Hover color */
 }
 
-/* Aligning buttons to the left */
-#buttons-container {
-  display: flex;
-  flex-direction: column; /* Stack buttons vertically */
-  align-items: flex-start; /* Align to the left */
-}
-
-/* Positioning image at the top right */
-#top-right-image {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-#top-right-image img {
-  width: 250px; /* Adjust width as necessary */
-  height: auto;
-  border-radius: 200%; /* Optional: make it a circle */
-}
-
-/* General reset for box sizing */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* Responsive image styles */
+.responsive-image {
+    width
