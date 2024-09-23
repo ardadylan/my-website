@@ -39,9 +39,9 @@ h1 {
 }
 
 .visualization-label {
-    text-align: left; /* Center the label */
+    text-align: center; /* Center the label */
     margin: 1rem 0; /* Add some margin */
-    font-size: 1.7rem; /* Adjust font size */
+    font-size: 1.5rem; /* Adjust font size */
     font-weight: bold; /* Make the label bold */
 }
 
