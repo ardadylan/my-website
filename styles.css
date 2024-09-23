@@ -1,19 +1,20 @@
-
-html, body {
-    height: 100%; /* Set to 100% height */
-    margin: 0; /* Remove default margin */
-}
-
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://ardadylan.github.io/my-website/images/moto_backround.jpg');
-    background-size: cover; /* Cover the entire viewport */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repeating */
-    color: #fff; /* Text color */
+    margin: 0; /* Remove default margin */
     padding: 20px; /* Add padding */
 }
 
-h1, p {
-    margin: 0; /* Remove margins for these elements */
+iframe {
+    border: none; /* Remove borders */
+    width: 100%; /* Ensure full width */
+    height: 600px; /* Set desired height */
+}
+
+/* Additional styles */
+h1, h2, p {
+    color: #fff; /* Change text color for visibility */
+}
+
+section {
+    margin-top: 20px; /* Space above the resume section */
 }
