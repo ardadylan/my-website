@@ -1,35 +1,20 @@
 /* styles.css */
 
-<h1 style="color: blue; text-align: center;">Hello, World!</h1>
-
-/* Body styles */
 body {
-    font-family: Arial, sans-serif; /* Change font */
-    background-image: url('https://ardadylan.github.io/my-website/images/moto_backround.jpg'); /* Background image */
-    background-size: cover; /* Cover the entire background */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    color: #fff; /* Change text color for contrast */
-    margin: 0; /* Remove default margin */
-    padding: 20px; /* Add padding */
+    font-family: Arial, sans-serif;
+    background-image: url('https://ardadylan.github.io/my-website/images/moto_backround.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; /* Change text color for better visibility against the background */
+    margin: 0;
+    padding: 20px;
 }
 
-/* Heading styles */
 h1 {
-    color: #333; /* Dark gray text color */
-    text-align: center; /* Center the heading */
+    text-align: center;
 }
 
-/* Paragraph styles */
 p {
-    color: #666; /* Medium gray text */
-    line-height: 1.6; /* Increase line spacing */
-}
-
-/* Image styles */
-img {
-    display: block; /* Make it a block element */
-    margin: 20px auto; /* Center the image */
-    max-width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
+    line-height: 1.6;
 }
