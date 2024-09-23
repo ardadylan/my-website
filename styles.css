@@ -103,7 +103,7 @@ p {
 }
 
 #top-right-image img {
-  width: 170px; /* Adjust width as necessary */
+  width: 250px; /* Adjust width as necessary */
   height: auto;
   border-radius: 200%; /* Optional: make it a circle */
 }
