@@ -94,3 +94,17 @@ p {
 .download-button:hover {
   background-color: #a9a9a9;
 }
+
+/* Positioning image at the top right */
+#top-right-image {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#top-right-image img {
+  width: 170px; /* Adjust width as necessary */
+  height: auto;
+  border-radius: 200%; /* Optional: make it a circle */
+}
+
