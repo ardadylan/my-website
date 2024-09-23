@@ -1,46 +1,53 @@
-html, body {
-    height: 100%; /* Set to 100% height */
-    margin: 0; /* Remove default margin */
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-image: url('https://ardadylan.github.io/my-website/images/turkiyebeach.JPG');
-    background-size: cover; /* Cover the entire viewport */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repeating */
-    color: #fff; /* Text color */
-    padding: 20px; /* Add padding */
+  font-family: Arial, sans-serif;
+  background-image: url('https://ardadylan.github.io/my-website/images/turkiyebeach.JPG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #333; /* Fallback color */
+  color: #fff;
+  padding: 2rem;
 }
 
 h1, p {
-    margin: 0; /* Remove margins for these elements */
+  margin-bottom: 1rem;
 }
 
+/* Resume Section */
 
 #resume {
-        margin-top: 20px; /* Space above the resume section */
+  margin-top: 2rem;
 }
+
+/* Embed Styles */
 
 embed {
-        border: none; /* Remove borders */
-        width: 100%; /* Full width */
-        height: 600px; /* Set desired height */
+  display: none; /* Hide the PDF embed */
 }
 
+/* Download Button */
+
 .download-button {
-        display: inline-block; /* Inline for small button */
-        margin-bottom: 10px; /* Space below the button */
-        padding: 5px 10px; /* Smaller padding */
-        background-color: #d3d3d3; /* Light gray background */
-        color: black; /* Black text */
-        border: none; /* Remove border */
-        text-align: center; /* Center the text */
-        text-decoration: none; /* Remove underline from link */
-        border-radius: 3px; /* Rounded corners */
-        font-size: 14px; /* Smaller font size */
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #d3d3d3;
+  color: black;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
 }
 
 .download-button:hover {
-        background-color: #a9a9a9; /* Darker gray on hover */
+  background-color: #a9a9a9;
 }
