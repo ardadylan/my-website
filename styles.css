@@ -1,20 +1,19 @@
 
+html, body {
+    height: 100%; /* Set to 100% height */
+    margin: 0; /* Remove default margin */
+}
+
 body {
     font-family: Arial, sans-serif;
     background-image: url('https://ardadylan.github.io/my-website/images/moto_backround.jpg');
     background-size: cover; /* Cover the entire viewport */
     background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    min-height: 100vh; /* Ensure body takes at least the full height of the viewport */
-    color: #fff; /* Change text color for contrast */
-    margin: 0; /* Remove default margin */
+    background-repeat: no-repeat; /* Prevent repeating */
+    color: #fff; /* Text color */
     padding: 20px; /* Add padding */
 }
 
-h1 {
-    text-align: center;
-}
-
-p {
-    line-height: 1.6;
+h1, p {
+    margin: 0; /* Remove margins for these elements */
 }
