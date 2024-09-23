@@ -26,6 +26,7 @@
             color: #000; /* Set text color to black for visibility */
             padding: 2rem;
             box-sizing: border-box;
+            position: relative; /* Allow absolute positioning of button */
         }
 
         h1 {
@@ -46,9 +47,29 @@
             font-size: 1.7rem; /* Adjust font size */
             font-weight: bold; /* Make the label bold */
         }
+
+        /* Button styles */
+        .back-button {
+            position: absolute; /* Position button at the top left */
+            top: 10px; /* Distance from top */
+            left: 10px; /* Distance from left */
+            padding: 0.5rem 1rem; /* Padding for button */
+            background-color: #d3d3d3; /* Button color */
+            color: black; /* Button text color */
+            text-decoration: none; /* Remove underline */
+            border-radius: 0.25rem; /* Rounded corners */
+            font-size: 0.9rem; /* Font size */
+            text-align: center; /* Center text */
+        }
+
+        .back-button:hover {
+            background-color: #a9a9a9; /* Hover color */
+        }
     </style>
 </head>
 <body>
+    <a href="https://ardadylan.github.io/my-website/" class="back-button">Back to Home</a>
+    
     <h1>Visualization Projects</h1>
     
     <div class='tableauContainer'>
