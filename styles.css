@@ -5,7 +5,11 @@
 /* Body styles */
 body {
     font-family: Arial, sans-serif; /* Change font */
-    background-color: #f4f4f4; /* Light gray background */
+    background-image: url('https://ardadylan.github.io/my-website/images/moto_backround.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: #fff; /* Change text color for contrast */
     margin: 0; /* Remove default margin */
     padding: 20px; /* Add padding */
 }
