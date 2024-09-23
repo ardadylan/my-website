@@ -5,6 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arda CV</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(
+          90deg,
+          var(--color-1) 0%,
+          var(--color-1) 25%,
+          var(--color-2) 25%,
+          var(--color-2) 50%,
+          var(--color-3) 50%,
+          var(--color-3) 75%,
+          var(--color-4) 75%,
+          var(--color-4) 100%
+        );
+        background-image: url("https://ardadylan.github.io/my-website/images/turkiyebeach.JPG");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #fff;
+        padding: 2rem;
+        box-sizing: border-box;
+      }
+
+      #top-right-image {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+
+      #top-right-image img {
+        width: 20vw; /* Responsive width */
+        height: auto;
+        border-radius: 50%; /* Make it a circle */
+      }
+
+      h1#name {
+        color: #000;
+        font-family: "Gowun Batang", serif;
+        margin-bottom: 1rem;
+        text-align: left; /* Align heading to the left */
+      }
+
+      /* Button styles */
+      .download-button,
+      .visualization-button {
+        display: block; /* Ensure buttons stack */
+        margin: 1rem 0; /* Space between buttons */
+        padding: 0.3rem 0.8rem; /* Padding for smaller buttons */
+        background-color: #d3d3d3;
+        color: black;
+        text-decoration: none;
+        border-radius: 0.25rem;
+        font-size: 0.9rem; /* Font size */
+        text-align: center; /* Center text */
+        width: 150px; /* Set a specific width */
+        align-self: flex-start; /* Align buttons to the left */
+      }
+
+      .download-button:hover,
+      .visualization-button:hover {
+        background-color: #a9a9a9;
+      }
+
+      /* Aligning buttons to the left */
+      #buttons-container {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: flex-start; /* Align to the left */
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        #top-right-image img {
+          width: 30vw; /* Increase size for smaller screens */
+        }
+
+        .download-button,
+        .visualization-button {
+          width: 120px; /* Smaller width for buttons on smaller screens */
+        }
+      }
+
+      @media (max-width: 480px) {
+        #top-right-image img {
+          width: 40vw; /* Further increase size for mobile */
+        }
+      }
+    </style>
   </head>
   <body>
     <div id="top-right-image">
@@ -13,7 +102,6 @@
         alt="Arda's Image"
       />
     </div>
-
     <h1 id="name">Arda Dylan Unal</h1>
 
     <div id="buttons-container">
@@ -23,7 +111,7 @@
       </a>
 
       <!-- Button to Open Visualization Projects -->
-      <a href="visualization_projects.html" class="visualization-button">
+      <a href="visualization.html" class="visualization-button">
         Visualization Projects
       </a>
     </div>
