@@ -1,130 +1,18 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arda CV</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background: linear-gradient(
-          90deg,
-          var(--color-1) 0%,
-          var(--color-1) 25%,
-          var(--color-2) 25%,
-          var(--color-2) 50%,
-          var(--color-3) 50%,
-          var(--color-3) 75%,
-          var(--color-4) 75%,
-          var(--color-4) 100%
-        );
-        background-image: url("https://ardadylan.github.io/my-website/images/turkiyebeach.JPG");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        color: #fff;
-        padding: 2rem;
-        box-sizing: border-box;
-        text-align: center; /* Center text in body */
-      }
-
-      #top-right-image {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-      }
-
-      #top-right-image img {
-        width: 20vw; /* Responsive width */
-        height: auto;
-        border-radius: 50%; /* Make it a circle */
-      }
-
-      h1#name {
-        color: #000;
-        font-family: "Gowun Batang", serif;
-        margin-bottom: 1rem;
-        margin-top: 10px; /* Add space above the name */
-        text-align: center; /* Center the name */
-      }
-
-      /* Button styles */
-      .download-button,
-      .visualization-button {
-        display: block; /* Ensure buttons stack */
-        margin: 1rem 0; /* Space between buttons */
-        padding: 0.3rem 0.8rem; /* Padding for smaller buttons */
-        background-color: #d3d3d3;
-        color: black;
-        text-decoration: none;
-        border-radius: 0.25rem;
-        font-size: 0.9rem; /* Font size */
-        text-align: center; /* Center text */
-        width: 150px; /* Set a specific width */
-      }
-
-      .download-button:hover,
-      .visualization-button:hover {
-        background-color: #a9a9a9;
-      }
-
-      /* Aligning buttons to the left */
-      #buttons-container {
-        display: flex;
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: flex-start; /* Keep buttons on the left */
-      }
-
-      /* Responsive adjustments */
-      @media (max-width: 768px) {
-        #top-right-image img {
-          width: 18vw; /* Slightly smaller size for tablets */
-        }
-
-        .download-button,
-        .visualization-button {
-          width: 120px; /* Smaller width for buttons on smaller screens */
-        }
-      }
-
-      @media (max-width: 480px) {
-        #top-right-image {
-          position: relative; /* Move image down */
-          margin-top: 1rem; /* Add some space above the image */
-        }
-        
-        #top-right-image img {
-          width: 15vw; /* 10% smaller for mobile */
-        }
-
-        #buttons-container {
-          flex-direction: row; /* Align buttons next to the image */
-          justify-content: center; /* Center buttons horizontally */
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="top-right-image">
-      <img
-        src="https://github.com/ardadylan/my-website/blob/main/images/ardamotopic.PNG?raw=true"
-        alt="Arda's Image"
-      />
-    </div>
-    <h1 id="name">Arda Dylan Unal</h1>
-
-    <div id="buttons-container">
-      <!-- Download Resume Button -->
-      <a href="images/Arda Unal Resume wObj.pdf" class="download-button" download>
-        Download Resume
-      </a>
-
-      <!-- Button to Open Visualization Projects -->
-      <a href="visualization_projects.html" class="visualization-button">
-        Visualization Projects
-      </a>
-    </div>
-  </body>
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <a href="visualisation_projects.html" class="button">View Visualization Projects</a>
+    </header>
+    <main>
+        <img src="https://ardadylan.github.io/my-website/images/turkiyebeach.JPG" alt="Beautiful Beach" class="responsive-image">
+    </main>
+</body>
 </html>
