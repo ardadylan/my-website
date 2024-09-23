@@ -5,21 +5,26 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    <h1 style="color: black">Arda Dylan Unal</h1>
+    <div id="top-right-image">
+      <img
+        src="https://github.com/ardadylan/my-website/blob/main/images/ardamotopic.PNG?raw=true"
+        alt="Arda's Image"
+      />
+    </div>
+    <h1 id="name" style="color: black">Arda Dylan Unal</h1>
 
-    <a href="images/Arda Unal Resume wObj.pdf" class="download-button" download
-      >Download Resume</a
-    >
+    <a href="images/Arda Unal Resume wObj.pdf" class="download-button" download>
+      Download Resume
+    </a>
 
     <script>
       fetch(
-        "https://main--preeminent-lokum-fc5c24.netlify.app/.netlify/functions/hello-world",
+        "https://main--preeminent-lokum-fc5c24.netlify.app/.netlify/functions/hello-world"
       )
         .then((response) => response.json())
         .then((data) => {
-          document.body.innerHTML += `<p>${data.message}</p>`
-        })
+          document.body.innerHTML += `<p>${data.message}</p>`;
+        });
     </script>
   </body>
 </html>
-
