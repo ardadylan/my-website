@@ -1,31 +1,46 @@
-        body, html {
-            height: 100%;
-            margin: 0; /* Remove default margin */
-        }
+html, body {
+    height: 100%; /* Set to 100% height */
+    margin: 0; /* Remove default margin */
+}
 
-        #resume {
-            margin-top: 20px; /* Space above the resume section */
-        }
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://ardadylan.github.io/my-website/images/moto_backround.jpg');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    color: #fff; /* Text color */
+    padding: 20px; /* Add padding */
+}
 
-        embed {
-            border: none; /* Remove borders */
-            width: 100%; /* Full width */
-            height: 600px; /* Set desired height */
-        }
+h1, p {
+    margin: 0; /* Remove margins for these elements */
+}
 
-        .download-button {
-            display: inline-block; /* Inline for small button */
-            margin-bottom: 10px; /* Space below the button */
-            padding: 5px 10px; /* Smaller padding */
-            background-color: #d3d3d3; /* Light gray background */
-            color: black; /* Black text */
-            border: none; /* Remove border */
-            text-align: center; /* Center the text */
-            text-decoration: none; /* Remove underline from link */
-            border-radius: 3px; /* Rounded corners */
-            font-size: 14px; /* Smaller font size */
-        }
 
-        .download-button:hover {
-            background-color: #a9a9a9; /* Darker gray on hover */
-        }
+#resume {
+        margin-top: 20px; /* Space above the resume section */
+}
+
+embed {
+        border: none; /* Remove borders */
+        width: 100%; /* Full width */
+        height: 600px; /* Set desired height */
+}
+
+.download-button {
+        display: inline-block; /* Inline for small button */
+        margin-bottom: 10px; /* Space below the button */
+        padding: 5px 10px; /* Smaller padding */
+        background-color: #d3d3d3; /* Light gray background */
+        color: black; /* Black text */
+        border: none; /* Remove border */
+        text-align: center; /* Center the text */
+        text-decoration: none; /* Remove underline from link */
+        border-radius: 3px; /* Rounded corners */
+        font-size: 14px; /* Smaller font size */
+}
+
+.download-button:hover {
+        background-color: #a9a9a9; /* Darker gray on hover */
+}
