@@ -17,14 +17,54 @@
       Download Resume
     </a>
 
-    <script>
-      fetch(
-        "https://main--preeminent-lokum-fc5c24.netlify.app/.netlify/functions/hello-world"
-      )
-        .then((response) => response.json())
-        .then((data) => {
-          document.body.innerHTML += `<p>${data.message}</p>`;
-        });
-    </script>
+    <!-- Example Visualizations Section -->
+    <section id="visualizations">
+      <h2 style="color: black">Example Visualizations</h2>
+      <div
+        class="tableauPlaceholder"
+        id="viz1727115810398"
+        style="position: relative; width: 20%; height: auto"
+      >
+        <noscript>
+          <a href="#">
+            <img
+              alt="Dashboard 1"
+              src="https://public.tableau.com/static/images/WJ/WJW7DQKWY/1_rss.png"
+              style="border: none"
+            />
+          </a>
+        </noscript>
+        <object class="tableauViz" style="display: none;">
+          <param
+            name="host_url"
+            value="https%3A%2F%2Fpublic.tableau.com%2F"
+          />
+          <param name="embed_code_version" value="3" />
+          <param name="path" value="shared/WJW7DQKWY" />
+          <param name="toolbar" value="yes" />
+          <param
+            name="static_image"
+            value="https://public.tableau.com/static/images/WJ/WJW7DQKWY/1.png"
+          />
+          <param name="animate_transition" value="yes" />
+          <param name="display_static_image" value="yes" />
+          <param name="display_spinner" value="yes" />
+          <param name="display_overlay" value="yes" />
+          <param name="display_count" value="yes" />
+          <param name="language" value="en-US" />
+        </object>
+      </div>
+      <script type="text/javascript">
+        var divElement = document.getElementById("viz1727115810398");
+        var vizElement = divElement.getElementsByTagName("object")[0];
+        vizElement.style.width = "273px"; // 20% of 1366px (original width)
+        vizElement.style.height = "159px"; // 20% of 795px (original height)
+
+        var scriptElement = document.createElement("script");
+        scriptElement.src =
+          "https://public.tableau.com/javascripts/api/viz_v1.js";
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+    </section>
   </body>
 </html>
