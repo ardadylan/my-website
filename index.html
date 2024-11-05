@@ -27,45 +27,76 @@
         color: #fff;
         padding: 2rem;
         box-sizing: border-box;
-        text-align: center; /* Center text in body */
+      }
+
+      .page-container {
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
       }
 
       #top-right-image {
-        position: absolute;
-        top: 10px;
-        right: 10px;
+        grid-column: 3;
+        justify-self: end;
       }
 
       #top-right-image img {
-        width: 20vw; /* Responsive width */
+        width: 20vw;
+        max-width: 200px;
         height: auto;
-        border-radius: 50%; /* Make it a circle */
+        border-radius: 50%;
       }
 
       h1#name {
         color: #000;
         font-family: "Gowun Batang", serif;
         margin-bottom: 1rem;
-        margin-top: 10px; /* Add space above the name */
-        text-align: center; /* Center the name */
+        margin-top: 10px;
+        text-align: center;
+        grid-column: 1 / -1;
       }
 
-      /* Button styles */
+      #game-container {
+        grid-column: 2;
+        justify-self: center;
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+      }
+
+      #gameCanvas {
+        border: 2px solid #000;
+        border-radius: 10px;
+        background-color: #87CEEB;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2/3;
+      }
+
+      #buttons-container {
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
       .download-button,
       .visualization-button,
       .linkedin-button,
       .typing-game-button,
       .github-button {
-        display: block; /* Ensure buttons stack */
-        margin: 1rem 0; /* Space between buttons */
-        padding: 0.3rem 0.8rem; /* Padding for smaller buttons */
+        display: block;
+        padding: 0.3rem 0.8rem;
         background-color: #d3d3d3;
         color: black;
         text-decoration: none;
         border-radius: 0.25rem;
-        font-size: 0.9rem; /* Font size */
-        text-align: center; /* Center text */
-        width: 150px; /* Set a specific width */
+        font-size: 0.9rem;
+        text-align: center;
+        width: 150px;
       }
 
       .download-button:hover,
@@ -76,17 +107,14 @@
         background-color: #a9a9a9;
       }
 
-      /* Aligning buttons to the left */
-      #buttons-container {
-        display: flex;
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: flex-start; /* Keep buttons on the left */
-      }
-
-      /* Responsive adjustments */
       @media (max-width: 768px) {
+        .page-container {
+          grid-template-columns: 150px 1fr 150px;
+          gap: 10px;
+        }
+
         #top-right-image img {
-          width: 18vw; /* Slightly smaller size for tablets */
+          width: 18vw;
         }
 
         .download-button,
@@ -94,61 +122,82 @@
         .linkedin-button,
         .typing-game-button,
         .github-button {
-          width: 120px; /* Smaller width for buttons on smaller screens */
+          width: 120px;
+        }
+
+        #game-container {
+          max-width: 300px;
         }
       }
 
       @media (max-width: 480px) {
+        .page-container {
+          grid-template-columns: 1fr;
+        }
+
         #top-right-image {
-          position: relative; /* Move image down */
-          margin-top: 1rem; /* Add some space above the image */
+          grid-column: 1;
+          justify-self: center;
+          margin-top: 1rem;
         }
         
         #top-right-image img {
-          width: 15vw; /* 10% smaller for mobile */
+          width: 15vw;
         }
 
         #buttons-container {
-          flex-direction: row; /* Align buttons next to the image */
-          justify-content: center; /* Center buttons horizontally */
+          grid-column: 1;
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+        }
+
+        #game-container {
+          grid-column: 1;
+          max-width: 250px;
         }
       }
     </style>
   </head>
   <body>
-    <div id="top-right-image">
-      <img
-        src="https://github.com/ardadylan/my-website/blob/main/images/ardamotopic.PNG?raw=true"
-        alt="Arda's Image"
-      />
+    <div class="page-container">
+      <h1 id="name">Arda Dylan Unal</h1>
+
+      <div id="buttons-container">
+        <a href="Arda Unal Resume 1.pdf" class="download-button" download>
+          Download Resume
+        </a>
+
+        <a href="visualization_projects.html" class="visualization-button">
+          Visualization Projects
+        </a>
+
+        <a href="https://www.linkedin.com/in/arda2/" class="linkedin-button" target="_blank">
+          LinkedIn Profile
+        </a>
+
+        <a href="https://copypastetyping.netlify.app/" class="typing-game-button" target="_blank">
+          My Typing Game
+        </a>
+
+        <a href="https://github.com/ardadylan" class="github-button" target="_blank">
+          GitHub Profile
+        </a>
+      </div>
+
+      <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+      </div>
+
+      <div id="top-right-image">
+        <img
+          src="https://github.com/ardadylan/my-website/blob/main/images/ardamotopic.PNG?raw=true"
+          alt="Arda's Image"
+        />
+      </div>
     </div>
-    <h1 id="name">Arda Dylan Unal</h1>
 
-    <div id="buttons-container">
-      <!-- Download Resume Button -->
-      <a href="Arda Unal Resume 1.pdf" class="download-button" download>
-        Download Resume
-      </a>
-
-      <!-- Button to Open Visualization Projects -->
-      <a href="visualization_projects.html" class="visualization-button">
-        Visualization Projects
-      </a>
-
-      <!-- LinkedIn Button -->
-      <a href="https://www.linkedin.com/in/arda2/" class="linkedin-button" target="_blank">
-        LinkedIn Profile
-      </a>
-
-      <!-- Typing Game Button -->
-      <a href="https://copypastetyping.netlify.app/" class="typing-game-button" target="_blank">
-        My Typing Game
-      </a>
-
-      <!-- GitHub Button -->
-      <a href="https://github.com/ardadylan" class="github-button" target="_blank">
-        GitHub Profile
-      </a>
-    </div>
+    <script src="flappy_bird.js"></script>
   </body>
 </html>
