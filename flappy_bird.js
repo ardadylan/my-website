@@ -36,12 +36,12 @@ class Bird {
     }
 
     flap() {
-        this.velocity = -5; // Reduced from -7 to make initial jump less strong
+        this.velocity = -5;
         this.targetAngle = 45;
     }
 
     update() {
-        this.velocity += 0.2; // Reduced from 0.25 to make gravity less strong
+        this.velocity += 0.2;
         this.y += this.velocity;
         
         this.targetAngle = Math.max(-45, Math.min(45, this.velocity * 5));
@@ -89,13 +89,24 @@ class Bird {
 }
 
 class Pipe {
-    constructor(canvas, ctx, x) {
+    constructor(canvas, ctx, x, pipeCount) {
         this.canvas = canvas;
         this.ctx = ctx;
         this.x = x;
         this.width = 50;
         this.gap = 150;
-        this.height = Math.random() * (canvas.height - 300) + 150;
+        
+        // Make first three pipes easier by placing gaps near the middle
+        if (pipeCount < 3) {
+            // Center of the canvas +/- small random offset
+            const centerY = canvas.height / 2;
+            const offset = Math.random() * 60 - 30; // Random offset between -30 and +30
+            this.height = centerY - (this.gap / 2) + offset;
+        } else {
+            // Normal random height for subsequent pipes
+            this.height = Math.random() * (canvas.height - 300) + 150;
+        }
+        
         this.scored = false;
     }
 
@@ -141,6 +152,7 @@ class Game {
         this.highScore = 0;
         this.lastPipeTime = 0;
         this.gameActive = false;
+        this.pipeCount = 0;
         
         this.bindEvents();
         this.showStartScreen();
@@ -174,6 +186,7 @@ class Game {
         this.score = 0;
         this.lastPipeTime = 0;
         this.gameActive = true;
+        this.pipeCount = 0;
         this.gameLoop();
     }
 
@@ -210,8 +223,9 @@ class Game {
 
         // Generate new pipes
         if (Date.now() - this.lastPipeTime > 1500) {
-            this.pipes.push(new Pipe(this.canvas, this.ctx, this.canvas.width));
+            this.pipes.push(new Pipe(this.canvas, this.ctx, this.canvas.width, this.pipeCount));
             this.lastPipeTime = Date.now();
+            this.pipeCount++;
         }
 
         // Update and draw pipes
